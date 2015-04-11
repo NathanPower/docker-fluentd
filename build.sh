@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /home/nathan/workspaces/docker-fluentd
-docker rm -f `docker ps -a -q`
+docker rm -f daemon_dave
+docker rm -f docker_fluentd
 docker build -t="nathanpower/docker-fluentd" .
 docker run -e HOST="$(uname -n)" --name docker_fluentd -d -v /var/lib/docker/containers:/var/lib/docker/containers -v /var/run/docker.sock:/var/run/docker.sock nathanpower/docker-fluentd 
 docker run --name daemon_dave -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
