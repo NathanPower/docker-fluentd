@@ -8,7 +8,7 @@ By running this container with the following command, one can aggregate the logs
 docker run -e HOST="$(uname -n)" -d -v /var/lib/docker/containers:/var/lib/docker/containers -v /var/run/docker.sock:/var/run/docker.sock nathanpower/docker-fluentd
 ```
 
-For the moment, the container logs are stored in /var/lib/docker/containers/yyyyMMdd.log on the host. Going forward the plan is to output the data to another fluentd instance oer TCP. The data is buffered, so you may also see buffer files like /var/lib/docker/containers/20141114.b507c71e6fe540eab.log where "b507c71e6fe540eab" is a hash identifier. You can mount that container volume back to host. Also, by modifying `fluent.conf` and rebuilding the Docker image, you can stream up your logs to LogEntries, Elasticsearch, Amazon S3, MongoDB, Treasure Data, or another FluentD instance.
+For the moment, the container logs are stored in /var/lib/docker/containers/yyyyMMdd.log on the host. Going forward the plan is to output the data to another fluentd instance over TCP. The data is buffered, so you may also see buffer files like /var/lib/docker/containers/20141114.b507c71e6fe540eab.log where "b507c71e6fe540eab" is a hash identifier. You can mount that container volume back to host. Also, by modifying `fluent.conf` and rebuilding the Docker image, you can stream up your logs to LogEntries, Elasticsearch, Amazon S3, MongoDB, Treasure Data, or another FluentD instance.
 
 The output log looks exactly like Docker's JSON formatted logs, with extra information about the container and host:
 
