@@ -17,12 +17,28 @@ The output log looks exactly like Docker's JSON formatted logs, with extra infor
   "log": "hello world\n",
   "stream": "stdout",
   "host": "osboxes",
-  "id": "72ad1000beb1",
-  "image": "ubuntu:14",
+  "short_id": "b049b768ab62",
+  "long_id": "b8aa72148d6bd0d01ae21a19e24d74c4ba7efa1826e5eaad7e66a5bee9c36e00",
+  "image": "ubuntu:14_04",
   "name": "daemon_dave",
-  "time": "2015-04-11T18:50:44+00:00"
+  "time": "2015-04-12T12:39:08+00:00"
 }
 
+```
+
+System log:
+
+```
+{
+  "key": "memory_stat_hierarchical_memsw_limit",
+  "value": 1.844674407371e+19,
+  "type": "gauge",
+  "name": "\/daemon_dave",
+  "host": "osboxes",
+  "short_id": "b049b768ab62",
+  "long_id": "b8aa72148d6bd0d01ae21a19e24d74c4ba7efa1826e5eaad7e66a5bee9c36e00",
+  "time": "2015-04-12T12:39:39+00:00"
+}
 ```
 
 ## How
