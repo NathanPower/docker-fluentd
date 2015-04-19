@@ -1,4 +1,4 @@
-# Docker-Fluentd: the Container to Log Other Containers' Logs
+# Docker-Fluentd: Log container and system logs, and forward to another fluentd instance
 
 ## What
 
@@ -49,4 +49,14 @@ The tags are modified to include details such as container name, image name, and
 
 Logs are then forwarded via the [secure forwarding plugin](http://docs.fluentd.org/articles/in_secure_forward) to another fluentd instance. Test this functionality easily with [docker-fluentd-logentries](https://github.com/NathanPower/docker-fluentd-logentries).
 
+## Credit
 
+[kiyoto / docker-fluentd](https://github.com/kiyoto/docker-fluentd)
+
+## Links
+
+## Links
+
+- [Fluentd website](https://www.fluentd.org)
+- [Fluentd's Repo](https://github.com/fluent/fluentd)
+- [Kubernetes's Logging Pod](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/contrib/logging)
