@@ -55,8 +55,6 @@ Logs are then forwarded via the [secure forwarding plugin](http://docs.fluentd.o
 
 ## Links
 
-## Links
-
 - [Fluentd website](https://www.fluentd.org)
 - [Fluentd's Repo](https://github.com/fluent/fluentd)
 - [Kubernetes's Logging Pod](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/contrib/logging)
